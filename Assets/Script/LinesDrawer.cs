@@ -38,7 +38,7 @@ public class LinesDrawer : MonoBehaviour
             EndDraw();
         }
 
-        Debug.Log(context.phase);
+        //Debug.Log(context.phase);
     }
     private void FixedUpdate()
     {
@@ -105,7 +105,7 @@ public class LinesDrawer : MonoBehaviour
             else
             {
                 currentLine.gameObject.layer = cantDrawOverLayerIndex;
-                currentLine.UsePhysics(true);
+                currentLine.UsePhysics(false);
             }
 
             currentLine = null;
