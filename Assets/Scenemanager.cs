@@ -16,4 +16,9 @@ public class Scenemanager : MonoBehaviour
         }
     }
 
+    public void change_scene(string Name_scene)
+    {
+        SceneManager.LoadScene(Name_scene);
+    }
+
 }
