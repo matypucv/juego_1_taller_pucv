@@ -79,7 +79,7 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  linePointsMinDistance: 0.3
+  linePointsMinDistance: 0.5
   lineWidth: 0.04
   light: {fileID: 4021805439728483560}
   Active_input: 1
