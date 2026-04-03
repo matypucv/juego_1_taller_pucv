@@ -1,9 +1,11 @@
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 public class Start_manager : MonoBehaviour
 {
     public bool pausing;
-    public TextMeshProUGUI Textbutton;
+    public Image pauseButton;
+    [SerializeField] Sprite pauseImg;
+    [SerializeField] Sprite startImg;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,14 +22,14 @@ public class Start_manager : MonoBehaviour
     {
         Time.timeScale = 0f;
         pausing = true;
-        Textbutton.text = "start";
+        pauseButton.sprite = startImg;
     }
 
     public void start_game()
     {
         Time.timeScale = 1f;
         pausing = false;
-        Textbutton.text = "pause";
+        pauseButton.sprite = pauseImg;
     }
 
     public void change_state()
