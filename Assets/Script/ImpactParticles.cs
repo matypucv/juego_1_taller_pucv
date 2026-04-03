@@ -5,6 +5,8 @@ public class BallImpactParticles : MonoBehaviour
 {
     public float minSpeedToEmit = 5f; 
     public ParticleSystem impactParticles;
+    [SerializeField] AudioSource audio;
+    [SerializeField] float pitchRange;
 
     private Rigidbody2D rb;
 
@@ -25,7 +27,14 @@ public class BallImpactParticles : MonoBehaviour
                 impactParticles.transform.position = contact.point;
 
                 impactParticles.Play();
+                PlayAudio();
             }
         }
+    }
+
+    void PlayAudio()
+    {
+        audio.pitch = Random.value * 2 + 1;
+        audio.Play();
     }
 }

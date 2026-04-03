@@ -268,7 +268,7 @@
                     "name": "",
                     "id": "647b111e-512e-4b27-af2a-f48b71cdfe40",
                     "path": "<Mouse>/leftButton",
-                    "interactions": "Hold",
+                    "interactions": "Hold(duration=0.01)",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Draw",
